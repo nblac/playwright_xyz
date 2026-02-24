@@ -1,0 +1,1 @@
+export const HOME_BASE_URL = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login";
