@@ -19,13 +19,7 @@ test.describe('Navigate to homepage page', () => {
   test('Functional test - validate the customer login type', async ({ page }) => {
     const pageManager = new CustomerPageManager(page, HOME_BASE_URL);
 
-    await pageManager.customer().clickCustomerLoginButton();
-    await expect(pageManager.customer().userNameDropdown).toBeVisible();
-    await pageManager.customer().userNameDropdown.selectOption({ label: "Harry Potter" });
-
-    await expect(pageManager.customer().loginButton).toBeVisible();
-    await pageManager.customer().loginButton.click();
-
+    await pageManager.customer().customerLogin("Harry Potter");
     await expect(pageManager.customer().transactionsButton).toBeVisible();
 
     await expect(pageManager.customer().logoutButton).toBeVisible();

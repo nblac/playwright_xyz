@@ -21,8 +21,4 @@ export default class BasePage {
     this.bankManagerLoginButton = page.locator('//*[contains(@class,"btn-lg")][@ng-click="manager()"]');
   }
   
-
-  async clickCustomerLoginButton(){
-    await this.customerLoginButton.click();
-  }
 }

@@ -18,5 +18,10 @@ export class CustomerPage extends BasePage {
 
     }
 
+    async customerLogin(customerName: string) {
+        await this.customerLoginButton.click();
+        await this.userNameDropdown.selectOption({ label: customerName });
+        await this.loginButton.click();
+    }
 
 }
