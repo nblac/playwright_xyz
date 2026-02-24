@@ -7,9 +7,9 @@ The framework is initialized from the standard Playwright base project
 template and extended with a structured architecture designed to ensure:
 
 -   **Reliability** -- deterministic test execution with proper
-    isolation and fixture management\
+    isolation and fixture management
 -   **Maintainability** -- clear separation of concerns and reusable
-    abstractions\
+    abstractions
 -   **Scalability** -- modular structure supporting growth in features,
     test coverage, and contributors
 
@@ -22,9 +22,9 @@ The project follows the **Page Object Model (POM)** design pattern.
 Each page or significant UI component is encapsulated in a dedicated
 Page Object that:
 
--   Centralizes selectors and UI interactions\
--   Exposes business-level methods instead of low-level actions\
--   Reduces duplication across test cases\
+-   Centralizes selectors and UI interactions
+-   Exposes business-level methods instead of low-level actions
+-   Reduces duplication across test cases
 -   Improves readability and long-term maintainability
 
 This approach enables clean, expressive test scenarios while minimizing
@@ -40,16 +40,16 @@ The test suite is organized around two primary functional domains:
 
 Covers end-user workflows such as:
 
--   Account interactions\
--   Transactions\
+-   Account interactions
+-   Transactions
 -   UI validations specific to customer-facing features
 
 ### 2. Bank Manager Functionalities
 
 Covers administrative workflows such as:
 
--   Customer management\
--   Account management\
+-   Customer management
+-   Account management
 -   Operational controls
 
 ------------------------------------------------------------------------
@@ -60,25 +60,25 @@ Within each functional domain, tests are logically grouped into:
 
 ### UI Validation Tests
 
--   Visual and structural validation\
--   Element visibility and state assertions\
--   Form validations\
+-   Visual and structural validation
+-   Element visibility and state assertions
+-   Form validations
 -   Error messaging verification
 
 ### Functional Tests
 
--   Business workflow validation\
--   End-to-end transactional flows\
--   Data integrity verification\
+-   Business workflow validation
+-   End-to-end transactional flows
+-   Data integrity verification
 -   Cross-page behavior validation
 
 ------------------------------------------------------------------------
 
 ## Goals of the Framework
 
--   Provide a clean and extensible automation baseline\
--   Support parallel execution and CI/CD integration\
--   Promote consistent coding standards through TypeScript typing\
+-   Provide a clean and extensible automation baseline
+-   Support parallel execution and CI/CD integration
+-   Promote consistent coding standards through TypeScript typing
 -   Enable straightforward addition of new functional modules
 
 ------------------------------------------------------------------------
