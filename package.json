@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "scripts": {
+  "scripts": {
     "ui": "npx playwright test --ui",
     "test": "npx playwright test",
     "reports": "npx playwright show-report",
@@ -23,6 +23,6 @@
     "eslint-config-prettier": "^9.0.0",
     "prettier": "3.0.3",
     "typescript": "^5.2.2",
-    "xunit-viewer": "^5.2.0"
+    "xunit-viewer": "^10.6.1"
   }
 }
